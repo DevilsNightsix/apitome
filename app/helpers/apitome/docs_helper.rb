@@ -4,7 +4,7 @@ module Apitome::DocsHelper
       if index == 0
         scope
       else
-        "[#{scope}]"
+        scope == '[]' ? '[]' : "[#{scope}]"
       end
     end.join
   end

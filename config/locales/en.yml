@@ -12,3 +12,4 @@ en:
   response: Response
   route: Route
   status: Status
+  is_array: Array

@@ -18,6 +18,9 @@
             <% if param['required'] %>
               <span class="label label-danger required"><%= t(:required) %></span>
             <% end %>
+            <% if param['is_array'] %>
+              <span class="label label-warning required"><%= t(:is_array) %></span>
+            <% end %>
           </td>
           <td class="description"><%= param['description'] %></td>
           <% param_extras(params).each do |extra| %>
